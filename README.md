@@ -59,12 +59,12 @@ $create->setSource('website');
 
 // Set the subscriber created date, by default the current time and date will be used
 // this can be useful if you're doing batch additions after a few days. Always be careful adding
-// old data though, we want to keep our lists in good helth!
+// old data though, we want to keep our lists in good health!
 $create->setCreated(new \DateTime('2016-01-26 09:00:00'));
 
 // You can set additional info with the subscriber by using the subscriber meta store
 // Before you can set extra data please add the extra columns to the email list
-// Mizmoz.com > Email Lists > Settings >Add Fields in the Merge fields section
+// Mizmoz.com > Email Lists > Settings > Add Fields in the Merge fields section
 $create->setMeta('customerId', '12345');
 
 // Execute the create command 
